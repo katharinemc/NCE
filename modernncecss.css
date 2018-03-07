@@ -1,0 +1,72 @@
+
+
+nav {
+	background-color: #417DA5;
+	color: white;
+
+}
+
+.navbar {
+		background-color: #417DA5;
+	color: white;
+	margin-bottom: 10%;
+}
+
+.navbar-default {
+	background-color: Orange;
+
+
+}
+
+body {/*
+		background-color: #417DA5;*/
+		font-family: sans-serif; 
+}
+
+.jumbotron {
+	background-color: #417DA5;
+
+}
+
+.row {
+	padding=top: 1%;
+}
+
+.FAQ {
+/*	background-color: yellow;*/
+	padding: 5%;
+}
+
+.questions:hover {
+	background-color: pink;
+}
+
+
+.bio::first-line {
+	font-size: 1.25em;
+}
+
+
+.testimonials p {
+	background-color: hotpink;
+	padding: 5% 10%;
+}
+
+.testimonials p:before {
+	content: open-quote;
+}
+
+.testimonials p:after {
+	content: close-quote;
+}
+
+.photo {
+	margin: auto;
+}
+
+.shadow {
+	border:1px solid black;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
