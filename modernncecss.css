@@ -1,19 +1,19 @@
 
 
 nav {
-	background-color: #417DA5;
-	color: white;
+/*	background-color: #417DA5;*/
+/*	color: white;*/
 
 }
 
 .navbar {
-		background-color: #417DA5;
+/*		background-color: #417DA5;*/
 	color: white;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 .navbar-default {
-	background-color: Orange;
+/*	background-color: Orange;*/
 
 
 }
@@ -21,10 +21,11 @@ nav {
 body {/*
 		background-color: #417DA5;*/
 		font-family: sans-serif; 
+		padding-bottom: 5%;
 }
 
 .jumbotron {
-	background-color: #417DA5;
+/*	background-color: #417DA5;*/
 
 }
 
@@ -42,13 +43,13 @@ body {/*
 }
 
 
-.bio::first-line {
+.answers::first-line {
 	font-size: 1.25em;
 }
 
 
 .testimonials p {
-	background-color: hotpink;
+/*	background-color: hotpink;*/
 	padding: 5% 10%;
 }
 
