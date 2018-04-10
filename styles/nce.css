@@ -222,7 +222,27 @@ nav ul li:hover {
 
 
 
+/* ANIMATIONS */
+/* 
+.js-initial {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+  from {
+    margin-right: 0;
+    margin-top: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-right: 0;
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+ */
 
 
 /*COLORS {
