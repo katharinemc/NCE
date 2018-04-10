@@ -9,10 +9,12 @@ html {min-height: 100%;
 
 body {
   min-height: 100%;
+  font-family: sans-serif;
   position: relative;
-  font-family: 'Arimo', sans-serif;
+  font-size: 18px;
   padding: 0;
-  margin: 0 0 50px 0;  background-color: #F9F9F3;
+  margin: 0 0 50px 0;  
+ 
 }
 
 /*HERE BEGINS GRID CSS*/
@@ -47,7 +49,7 @@ body {
 }
 
 .col-3, .col-4, .col-6,  .col-b, .col-12 {
-
+  float: right;
   width: 100%;
     padding-left: 1.04166666%;
   padding-right: 1.04166666%;
@@ -55,64 +57,40 @@ body {
 
 }
 
- Mobile defaults 
-@media only screen and (max-width: 639px){
-  .col-3, .col-4, .col-6,  .col-b, .col-12 {
-    width: 100%;
-  background-color: pink;
+
+
+@media only screen and (max-width: 600px){
+   .col-b, .col-3  {
+background-color: orange;
     margin: 0 auto;
+    width: 100%;
 
   }
-
 
 
 }
 
 
-
-
-
 /* Non-mobile, grid */
 @media only screen and (min-width: 640px) {
   /* 3 columns, 3/12 in % */
-  .col-1 {
-    width: 10.33%;
-
-         
-  }
-
-  .col-3 {
+   .col-3 {
     width: 25%;
- 
+     
   }
 
-  /* 4 columns */
-  .col-4 {
-    width: 33%;
-  }
-
-  /* 6 columns */
- 
- .col-6 {
-    width: 45%;
-       
-
-  }
-
-
-
-  .col-b {
+   .col-b {
     width: 75%;
 
     margin: 0 auto;
   }
 
-
-  /* 12 columns */
-  .col-12 {
-    width: 100%;
-
+  .vertical {
+    position: relative;
+    top: -45%;
+    transform: translateY(45%);
   }
+
 }
 
 
@@ -126,21 +104,27 @@ footer {
 
 }
 
-.footericon {
+button {
 float: right;
-display: inline-block;
-text-align: right;
-width: 25%;
+font-size: inherit;
+color:white;
+display: inline;
+height: 100%;
+padding: 2em;
+background-color: #054A91;
+text-align: center;
+border-radius: 30px;
+box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+0px -5px 35px rgba(255,255,255,0.3);
 }
 
-
 header {
-
-border-bottom: 10px solid #F4D35E;
-
+padding: 0 0 1% 0;
+border-radius: 10px;
   }
 
 header h1, h2 {
+  margin: 0 auto 0 auto;
   text-align: center;
 font-family: 'Crimson Text', serif;
 }
@@ -160,31 +144,39 @@ section {
 }
 
 .testimonials {
-font-style: italic;
-width: 75%;
-display: inline-block;
+  width: 50%;
+  display: inline-block;
+  border-left: 10px solid #054A91;
+  margin: .5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
 }
-
 .testimonials:before {
+  color: #054A91;
   content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.05em;
+  vertical-align: -0.4em;
+}
+.testimonials p {
+  display: inline;
 }
 
-.testimonials:after {
-  content: close-quote;
-}
+
+
 
 
 
 nav ul li {
+   font-size: 1.5em;
   text-align: center;
   list-style-type: none;
-   background-color: #054A91;
-  color: #FAF0CA;
   width: 85%;
   padding: 2em 0;
   margin: 1% auto;
- font-size: 1.25em;
- letter-spacing: 2px;
+  
+  
 }
 
 nav ul li:hover {
@@ -194,14 +186,12 @@ nav ul li:hover {
 /*LOGO ICON*/
 
 .square-box{
-  margin-left: auto;
-  margin-right: auto;
-/*    float: left;*/
+  margin: 1% auto 0 auto;
     position: relative;
-    width: 15%;
+    width: 10%;
     overflow: hidden;
     background:#EE964B;
-  /*  margin-right: 1%;*/
+
 }
 .square-box:before{
     content: "";
@@ -223,7 +213,7 @@ nav ul li:hover {
 }
 .square-content span {
     display: table-cell;
-    font-size: 2em;
+    /* font-size: 2em; */
     text-align: center;
     vertical-align: middle;
     font-family: 'Poiret One', cursive;
@@ -238,11 +228,38 @@ nav ul li:hover {
 /*COLORS {
 */  
 
-.bottombar {
-     border-top: 5px solid; 
-     background-color: #EE964B;
-     padding: 1% 5%;
-    
+body {
+  background-color: inherit;
+}
+
+footer {
+  border-top: 5px solid black;
+
+ background-color: lightgray;
+/* color: #ffffff; */
+}
+
+
+header {
+  background-color: inherit;
+  border-color: inherit;
+}
+
+nav ul li {
+  border: 5px solid ;
+  border-color: orange ;
+  color: orange;
   
+}
+
+nav ul li:hover {
+  border-radius: 30px;
+  color:white;
+  background-color: orange;
+}
+
+.businessname {
+  color: #EE964B;
+  font-size: 1.5em; 
 }
 
