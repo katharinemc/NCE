@@ -13,6 +13,13 @@
   width: 100%;
 }
 
+dl {
+  line-height: 1.5;
+}
+dt {
+  font-weight: bolder;
+}
+
 main {
   height: 100%;
 }
@@ -82,7 +89,7 @@ header {
   transform: translateY(-50%);
 }
 
-.history {
+.content {
   width: 80%;
   margin: auto;
   line-height: 1.2;
@@ -91,12 +98,16 @@ header {
 h2 {
   margin: 0 0 1% 0;
 }
-.history h3 {
+
+.hidden {
+  display: none;
+}
+.content h3 {
   color: orange;
   text-align: right;
 }
 
-.history p {
+.content p {
   margin: 0 0 1% 0;
 }
 

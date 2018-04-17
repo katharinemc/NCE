@@ -27,6 +27,15 @@ $(".js-navigator").click(function(){
 });
 
 
+$("dt").click (function () {
+  let clickedElement = event.currentTarget;
+  let associatedText = $(clickedElement).next('dd');
+
+  associatedText.toggleClass('hidden');
+console.log('im a faq!', associatedText);
+
+});
+
 
 function switchText (elementHandle) {
   if ($(elementHandle).hasClass('js-initial') === true) {
