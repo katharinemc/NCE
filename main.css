@@ -18,10 +18,6 @@ h1.businessname {
 
 }
 
-h1.businessname::after {
-  /* ICON GOES HERE */
-
-}
 
 /* OTHER STUFF */
 
@@ -69,6 +65,10 @@ dl {
 }
 dt {
   font-weight: bolder;
+}
+
+dd{
+  margin-left: 3%;
 }
 
 dt::before {
